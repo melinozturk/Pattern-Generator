@@ -7,14 +7,17 @@ public class Pattern{
     //postcondition
     public static void stars(int rows){ // use while loops
        // code goes here
-       int count = 1;
-       while (count<=7);{
-        System.out.println("*")
+       int rowNow = 1;
+       while (rowNow <= rows);{
+        int totalStars = (rowNow * 2) - 1 ;
+        int = totalStars = 0 ; 
+        System.out.println("*");
         count+=2
        }
     }
       public static void main(int rows){
        // testing goes here
+       stars(7);
     }
      public static void triangle(int rows){ // use do ... while or while loops
        // code goes here
@@ -30,6 +33,9 @@ public class Pattern{
     }
       public static void eo(int maxE){ // use loops of your choice
         // code goes here
+        String letter = "e";
+        if (maxE%2==o)
+        letter="o";
     }
       public static void main(int rows){
        // testing goes here
@@ -40,10 +46,4 @@ public class Pattern{
       public static void main(int rows){
        // testing goes here
     }
-
-
-
-
-
-
 }
