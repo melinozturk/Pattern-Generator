@@ -30,7 +30,7 @@ public class Pattern{
        System.out.println("EO:");
        //eo(11);
        System.out.println("Pyramid:");
-       //pyramid  (5);
+       pyramid  (5);
 
     }
      public static void triangle(int rows){ // use do ... while or while loops
@@ -68,17 +68,17 @@ public class Pattern{
     
       public static void eo(int maxE){ // use loops of your choice
         // code goes here
-        String letter = "e";
-        if (maxE%2==0)
-        letter="o";
-        else letter ="e";
+        //String letter = "e";
+        //if (maxE%2==0)
+        //letter="o";
+        //else letter ="e";
 
-        for (int first=1; i<=maxE ; first++)
-
-
+        //for (int first=1; i<=maxE ; first++)
 
 
-        int Counted = 0;
+
+
+        //int Counted = 0;
 
         for (int i = 0; i <= maxE*2; i--) {
           int CountQuantity = i+1;
@@ -100,14 +100,23 @@ public class Pattern{
             System.out.print(GoalLetter);
           }
 
-          System.out.println();
+          System.out.println();}
         }
-    }
+      
      
      public static void pyramid(int rows){
        // code goes here
-       int pyramid = 1;
+       for (int pyramid=1; pyramid<= rows ; pyramid++){
+        for (int space=1; space < pyramid; space++){
+          System.out.println("");
+        }
+        for (int numbers = 1; numbers <=(2*(rows-1))+1; numbers++) // how many numbers to print on each line{
+        System.out.print(pyramid);
+
+        }
+        System.out.println();
+       }
 
     }
    
-}
+
