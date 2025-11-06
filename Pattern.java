@@ -7,43 +7,50 @@ public class Pattern{
     //postcondition
     public static void stars(int rows){ // use while loops
        // code goes here
-       int rowNow = 1;
-       while (rowNow <= rows);{
-        int totalStars = (rowNow * 2) - 1 ;
-        int = totalStars = 0 ; 
-        System.out.println("*");
-        count+=2
+        int stars = 1;
+        String star = "*";
+        while (stars<= rows){
+          System.out.println(star);
+          star+="**";
+          stars+=1;
+        }
+
        }
-    }
-      public static void main(int rows){
+    
+      public static void main(String []args){
        // testing goes here
        stars(7);
+       triangle(9);
+       odds (5);
+       eo(11);
+       pyramid  (5);
+
     }
      public static void triangle(int rows){ // use do ... while or while loops
        // code goes here
+       int triangle = 1;
+       String number ="1";
+       int count = 1;
+
+       while (triangle rows)
+
+
+
     }
-      public static void main(int rows){
-       // testing goes here
-    }
+    
      public static void odds(int start){ // use for loops
        // code goes here
     }
-      public static void main(int rows){
-       // testing goes here
-    }
+    
       public static void eo(int maxE){ // use loops of your choice
         // code goes here
         String letter = "e";
-        if (maxE%2==o)
+        if (maxE%2==0)
         letter="o";
     }
-      public static void main(int rows){
-       // testing goes here
-    }
+     
      public static void pyramid(int rows){
        // code goes here
     }
-      public static void main(int rows){
-       // testing goes here
-    }
+   
 }
