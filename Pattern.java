@@ -9,6 +9,7 @@ public class Pattern{
        // code goes here
         int stars = 1;
         String star = "*";
+
         while (stars<= rows){
           System.out.println(star);
           star+="**";
@@ -19,34 +20,74 @@ public class Pattern{
     
       public static void main(String []args){
        // testing goes here
-       stars(7);
-       triangle(9);
-       odds (5);
-       eo(11);
-       pyramid  (5);
+      // stars(7);
+       //triangle(9);
+       odds (9);
+      // eo(11);
+       //pyramid  (5);
 
     }
      public static void triangle(int rows){ // use do ... while or while loops
        // code goes here
-       int triangle = 1;
-       String number ="1";
-       int count = 1;
+       /*int triangle = 1;
+       String number = "1";
+       int count = 1;*/
 
-       while (triangle rows)
+       int currentNumber = 1;
+       
+       while (currentNumber < rows+1) {
+        for (int i = 0; i < currentNumber; i++) {
+          String convertedNumber = String.valueOf(currentNumber);
+          System.out.print(convertedNumber);
+        }
 
-
+        System.out.println();
+        currentNumber += 1;
+       }
 
     }
     
      public static void odds(int start){ // use for loops
        // code goes here
+       for (int i = start; i >= 1; i-=2) {
+        for (int count = 0; count < i; count++) {
+          System.out.print(i);
+        }
+
+        System.out.println();
+       }
     }
     
       public static void eo(int maxE){ // use loops of your choice
         // code goes here
-        String letter = "e";
-        if (maxE%2==0)
-        letter="o";
+        //String letter = "e";
+        //if (maxE%2==0)
+        //letter="o";
+
+        int Counted = 0;
+
+        for (int i = 0; i <= maxE*2; i--) {
+          int CountQuantity = i+1;
+          boolean IsReversing = i >= maxE;
+
+          if (IsReversing) {
+            CountQuantity = maxE - (i-maxE);
+          }
+          
+          String GoalLetter = "";
+
+          if (CountQuantity % 2 == 0) {
+            GoalLetter = "E";
+          } else {
+            GoalLetter = "O";
+          }
+
+          for (int index = 0; index < CountQuantity; index++) {
+            System.out.print(GoalLetter);
+          }
+
+          System.out.println();
+        }
     }
      
      public static void pyramid(int rows){
