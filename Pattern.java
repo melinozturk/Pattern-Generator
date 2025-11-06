@@ -4,7 +4,8 @@
 
 public class Pattern{
     //pre condition :  Each method written should accept an argument that will determine how many lines of the pattern are shown on the screen. 
-    //postcondition
+    //postcondition : The patterns shown in the directions document will match exactly with the ones that my code outputs. 
+
     public static void stars(int rows){ // use while loops
        // code goes here
         int stars = 1;
@@ -19,11 +20,16 @@ public class Pattern{
        }
     
       public static void main(String []args){
-       // testing goes here
-      // stars(7);
-       //triangle(9);
+       //testing goes here
+       System.out.println("Stars:");
+      stars(7);
+      System.out.println("Triangle:");
+       triangle(9);
+       System.out.println("Odds:");
        odds (9);
-      // eo(11);
+       System.out.println("EO:");
+       //eo(11);
+       System.out.println("Pyramid:");
        //pyramid  (5);
 
     }
@@ -49,6 +55,8 @@ public class Pattern{
     
      public static void odds(int start){ // use for loops
        // code goes here
+       if (start%2==0)
+           start--; //minus one because we need to make it odd even if its even. 
        for (int i = start; i >= 1; i-=2) {
         for (int count = 0; count < i; count++) {
           System.out.print(i);
@@ -60,9 +68,15 @@ public class Pattern{
     
       public static void eo(int maxE){ // use loops of your choice
         // code goes here
-        //String letter = "e";
-        //if (maxE%2==0)
-        //letter="o";
+        String letter = "e";
+        if (maxE%2==0)
+        letter="o";
+        else letter ="e";
+
+        for (int first=1; i<=maxE ; first++)
+
+
+
 
         int Counted = 0;
 
@@ -92,6 +106,8 @@ public class Pattern{
      
      public static void pyramid(int rows){
        // code goes here
+       int pyramid = 1;
+
     }
    
 }
